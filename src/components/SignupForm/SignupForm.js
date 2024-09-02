@@ -61,7 +61,7 @@ const SignUpForm = ({ onSubmitSuccess }) => {
         throw new Error('Please select a valid document to upload');
       }
   
-      const response = await fetch('https://affiliate-signup-server.onrender.com', {
+      const response = await fetch('http://localhost:5000/api/users/register', {
         method: 'POST',
         body: formData,
       });
